@@ -26,7 +26,7 @@ class DirectorsController < ApplicationController
 
     if @director.valid?
       @director.save
-      redirect_to director_url, notice: "Director created successfully."
+      redirect_to directors_url, notice: "Director created successfully."
     else
       render "new"
     end
